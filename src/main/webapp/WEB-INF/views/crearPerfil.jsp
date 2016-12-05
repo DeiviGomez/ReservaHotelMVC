@@ -10,8 +10,10 @@
 
 <%@include file="masterHead.jsp" %>
 
-<p>Pagina de creacion de perfil solo disponible si es que no hay perfil logeado</p>
-<p>(podria ser la misma pagina de crear perfil validando si es que hay o no perfil logeado)</p>
+<br>
+
+<p style="text-align: center;">Para hacer uso del sistema primero debes iniciar Sesión o registate  <a href="#" id="btnRegistroUsuario3">aqui</a></p>
+
 
 <%@include file="masterFooter.jsp" %>
 

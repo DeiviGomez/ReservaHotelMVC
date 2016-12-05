@@ -18,7 +18,7 @@
 					<c:choose>
   						<c:when test = "${menu == 1}">
 							<li><a href="#" id="btnLogin2">inicia sesión</a></li>
-							<li><a href="${pageContext.servletContext.contextPath}/Registro">regístrate</a></li>
+							<li><a href="#" id="btnRegistroUsuario2">regístrate</a></li>
 						</c:when>
 						<c:when test = "${menu == 2}">
 							<li><a href="${pageContext.servletContext.contextPath}/">habitaciones</a></li>

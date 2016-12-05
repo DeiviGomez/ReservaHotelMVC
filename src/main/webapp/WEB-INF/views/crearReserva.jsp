@@ -1,3 +1,4 @@
+<%@page import="Entidades.PersonaEL"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="true" %>
 <!DOCTYPE HTML>
@@ -118,6 +119,8 @@
 		    };
 		});
 		</script>
+		
+
 	
 </head>
 
@@ -150,7 +153,7 @@
 							</thead>
 							<tbody>
 								<c:forEach items="${disponibles}" var="hab">
-									<tr id="tr${hab.id}">
+									<tr id="tr'${hab.id}'">
 										<td align="center">
 											<div style="width:20px;">
 												<input type="checkbox" name="listaHabitaciones" value="${hab.id}" 

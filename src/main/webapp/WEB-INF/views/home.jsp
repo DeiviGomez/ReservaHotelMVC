@@ -8,7 +8,27 @@
 	<script src="<c:url value="/resources/js/jquery.min.js"/>" ></script>
 	<link rel="stylesheet" href="<c:url value="/resources/css/jquery-ui.css"/>" />
 	<script src="<c:url value="/resources/js/jquery-ui.js"/>" ></script>
+	<script src="<c:url value="/resources/jsDeivi/sweetalert.min.js"/>"></script>
+    <link rel="stylesheet" href="<c:url value="/resources/jsDeivi/css/sweetalert.css"/>">
+ 
 	<script>
+	
+	$(document).ready(function () {
+		 var idPagoMensaje=$("#idPagoMensaje").val(); 
+		 
+		 if(idPagoMensaje=='1'){
+			 swal("Pago realizado con exito", "Gracias por tu Reserva..!", "success")
+			
+		 }else if(idPagoMensaje=='0'){
+			 swal("Pago NO realizado ", "Comuniquese con el administrador..!", "error")
+			
+		 }
+		 else{
+			    
+		 }
+	})
+	
+	
 		$(function(){
 			var dateFormat = "dd/mm/yy";
 			var from = $("#datepicker")
@@ -42,7 +62,7 @@
 <body>
 
 <%@include file="masterHead.jsp" %>
-
+<input  type="hidden" id="idPagoMensaje" value="${exitopago}" >
 <div class="images-slider">
     <div id="fwslider"> 
         <div class="slider_container">
@@ -124,7 +144,7 @@
 			</div>
 		</div>
 
-		<!--start grids_of_3 -->
+		<!--start grids_of_3 
 		<div class="grids_of_3">
 
 			<div class="grid1_of_3">
@@ -162,7 +182,7 @@
 
 			<div class="clear"></div>
 
-		</div>	
+		</div>	 -->
 	</div>
 </div>
 
